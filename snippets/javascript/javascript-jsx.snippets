@@ -1,0 +1,96 @@
+# React & JSX
+snippet <> "- Place a custom tag and cursors"
+	<${1:}></$1>
+
+
+snippet div "- Plain div"
+	<div ${1:}>${2:}</div>
+
+
+snippet divc "Place a div using class"
+	<div className="${1}">${2:}</div>
+
+snippet div. "<div> with class"
+	<div className="${1:}">
+	  ${0}
+	</div>
+
+snippet a "Link"
+	<a href="${1:}}">${2:Anchor Text}</a>
+
+
+snippet address "<address>"
+	<address>$1</address>
+
+
+snippet b "<b>"
+	<b>$1</b>
+
+
+snippet button "<button>"
+	<button>$1</button>
+
+
+snippet img "place a <img>"
+	<img src="$1" alt="$2" />
+
+
+snippet li "place a list"
+	<li>${0:${VISUAL}}</li>
+
+
+snippet ol "place a <ol>"
+	<ol>
+		<li>$1</li>
+	</ol>
+
+snippet ul "place a <ol>"
+	<ul>
+		<li>$1</li>
+	</ul>
+
+
+snippet dl "place a <dl>"
+	<dl>
+		<dt>$1</dt><dd></dd>
+	</dl>
+
+
+snippet p "paragraph" w
+	<p>${0:${VISUAL}}</p>
+
+
+snippet select "Select Box" w
+	<select name="${1:some_name}" id="${2:$1}"${3:${4: multiple}${5: size="${6:1}"}}>
+		${0:${VISUAL}}
+	</select>
+
+
+snippet strong "<strong>" w
+	<strong>$1</strong>
+
+
+snippet table "HTML <table>" w
+	<table>
+	${0:${VISUAL}}
+	</table>
+
+
+snippet span "<span>" w
+	<span> ${0:${VISUAL}} </span>
+
+
+snippet span# "<span> with ID & className" w
+	<span`!p snip.rv=' id="' if t[1] else ""`${1:name}`!p snip.rv = '"' if t[1] else ""``!p snip.rv=' className="' if t[2] else ""`${2:name}`!p snip.rv = '"' if t[2] else ""`> ${0:${VISUAL}} </span>
+
+
+snippet span. "<span> with className" w
+	<span`!p snip.rv=' className="' if t[1] else ""`${1:name}`!p snip.rv = '"' if t[1] else ""`> ${0:${VISUAL}} </span>
+
+
+snippet class "place a className"
+	className="${1}"
+
+snippet key
+	key={${1}}
+
